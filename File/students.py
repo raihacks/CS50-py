@@ -1,4 +1,20 @@
+import csv
+name = input("What's your name? ")
+home = input("What's your home? ")
+with open("/home/anya/C_CODE/CS50-py/File/student.csv", "a") as file:
+    writer = csv.DictWriter(file, fieldnames = ["name", "home"])
+    writer.writerow({"name": name, "home": home})
 
+# students = []
+# with open("/home/anya/C_CODE/CS50-py/File/student.csv") as file:
+#     reader = csv.DictReader(file)
+#     for row in reader:
+#         students.append({
+#             "name": row["name"].strip(),
+#             "home": row["home"].strip()
+#         })
+# for student in sorted(students, key=lambda s: s["name"]):
+#     print(f"{student['name']} is from {student['home']}")
 
 # students = []
 # with open("student.csv") as file:
