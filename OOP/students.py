@@ -1,7 +1,3 @@
-'''
-classes = 
-'''
-
 # import random
 # class Hat:
 #     def __init__(self):
